@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+
+        <div id="logo">
+
+            Code Editor
+
+        </div>
+
+        <div id="buttonContainer">
+
+            <div class="toggleButton active" id="html">HTML</div>
+
+            <div class="toggleButton" id="css">CSS</div>
+
+            <div class="toggleButton active" id="javascript">JavaScript</div>
+
+            <div class="toggleButton active" id="output">Output</div>
+
+        </div>
+
+    </div>
+
+    <div id="bodyContainer">
+
+        <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+
+        <textarea id="cssPanel" class="panel hidden">p { color: red; }</textarea>
+
+        <textarea id="javascriptPanel" class="panel">document.getElementById("paragraph").innerHTML = "Hello Guys!";</textarea>
+
+        <iframe id="outputPanel" class="panel"></iframe>
+
+
+    </div>
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
